@@ -1,0 +1,1135 @@
+/*
+/* Version: 1.1 
+*/
+/*  To make Responsive
+---------------------------------------------------------------------- /
+*   1 - media screen and (min-width: 1200px)
+*   2 - media screen and (min-width: 992px) and (max-width: 1199px)
+*   3 - media screen and (min-width: 768px) and (max-width: 991px)
+*   4 - media screen and (max-width: 767px)
+*   6 - Retina
+*/
+/*  1 - media screen and (min-width: 1200px)
+----------------------------------- ----------------------------------- */
+@media (min-width: 1200px) {
+  .hotel-weeding {
+    margin-left: 15px;
+    top: 28px;
+  }
+  .hotel-weeding-left {
+    margin-right: 15px;
+    top: 23px;
+  }
+  .weeding-img {
+    margin-right: 15px;
+  }
+}
+/*  2 - media screen and (min-width: 992px) and (max-width: 1199px)
+---------------------------------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header:after {
+    width: 24%;
+  }
+  .hotel-weeding-left {
+    padding: 0px 40px;
+    top: -3px;
+    margin-right: 15px;
+  }
+  .hotel-weeding {
+    margin-left: 15px;
+    padding: 5px 40px;
+    top: -3px;
+  }
+  .weeding-img {
+    margin-right: 15px;
+  }
+  .slider-booking-form:after {
+    border-width: 45px 215px 0;
+    bottom: -45px;
+  }
+  .slider-booking-form {
+    padding: 30px 15px 10px;
+  }
+  .slider-booking-form .form-logo {
+    display: none;
+  }
+  .slider-booking-form .m-l-7 {
+    margin-left: 0px;
+  }
+  .banner-content h1 {
+    text-align: left;
+  }
+  .form-group {
+    width: 100%;
+  }
+  .service-icon {
+    margin-right: 20px;
+  }
+  .offer-img:after {
+    display: none;
+  }
+  .offer-hover-text {
+    padding: 15px;
+  }
+  .cta {
+    padding: 100px 0;
+  }
+  .cta .col-lg-3 {
+    text-align: center;
+  }
+  .cta .btn {
+    margin-top: 50px;
+  }
+  .cta-content {
+    text-align: center;
+  }
+  .cta-content h3 {
+    padding: 0px;
+  }
+  .owl-controls {
+    display: none!important;
+  }
+  #testimonial-slider .item:before {
+    display: none;
+  }
+  .section-heading h2 {
+    font-size: 30px;
+  }
+  .single-title-line {
+    left: 5px;
+    top: 45px;
+  }
+  .content {
+    text-align: center;
+  }
+  #store-slider {
+    margin-top: 50px;
+  }
+  #brand-slider img {
+    display: inline-block;
+  }
+  .service-content {
+    margin-bottom: 40px;
+  }
+  .location {
+    padding-bottom: 60px;
+  }
+  #blog-slider .owl-wrapper-outer {
+    margin-bottom: 0;
+  }
+  .offer-hover-text {
+    padding: 15px;
+  }
+  .offer-hover-text p,
+  .offer-hover-text div {
+    display: none;
+  }
+  .staff-title-info {
+    padding: 10px 0;
+    width: 75%;
+  }
+  .cta .text-right {
+    text-align: center;
+  }
+  .tweet:before {
+    display: none;
+  }
+  .phone-number:before {
+    display: none;
+  }
+  .phone-number:after {
+    display: none;
+  }
+  .phone-number {
+    font-size: 24px;
+    text-align: center;
+    padding: 15px;
+  }
+  .phone-number .phone-icon {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  .copyright {
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .payment-icon {
+    text-align: center;
+  }
+  .room-suites .col-lg-4 {
+    text-align: center;
+  }
+  .room-content {
+    display: inline-block;
+  }
+  .gallery-img .m-t-10 {
+    margin-top: 0px;
+  }
+  .store .section-heading {
+    margin-top: 0;
+  }
+  #tweet-slider .owl-item {
+    text-align: center;
+  }
+  .banner-content {
+    padding-bottom: 0;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .breadcrumb {
+    padding-bottom: 50px;
+    padding-top: 15px;
+    text-align: center;
+  }
+  .breadcrumb.text-right {
+    text-align: right;
+  }
+  .scroll-icon {
+    margin-top: -128px;
+    margin-bottom: 0;
+  }
+  #tweet-slider .item i {
+    margin-right: 0;
+  }
+  .our-service .section-heading {
+    margin-top: 100px;
+  }
+  .our-service .service-content {
+    margin-bottom: 0;
+  }
+  .more-slider .owl-item {
+    padding: 0 10px;
+  }
+  iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .accordion-area .accordion-menu .panel .panel-heading a {
+    padding: 20px;
+  }
+  .accordion-area .accordion-menu .panel .panel-heading a h4 i {
+    margin-left: 0;
+    margin-right: -10px;
+  }
+  .form-icon {
+    right: 5px;
+  }
+  .luxurious-hotel .link {
+    padding: 10px;
+  }
+  .luxurious-hotel .price {
+    margin-left: 10px;
+  }
+  .phone-number {
+    margin-bottom: 30px;
+  }
+  .bottom {
+    padding-bottom: 50px;
+  }
+  .bottom .row > div {
+    margin-bottom: 50px;
+  }
+  .address {
+    min-height: 231px;
+    padding: 0 18px 10px 40px;
+  }
+  .add-layer {
+    border-width: 100px 100px 0 0;
+  }
+  .reservation .price-menu span {
+    margin-left: 5px;
+  }
+}
+/*  3 - media screen and (min-width: 768px) and (max-width: 991px)
+---------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .topbar {
+    padding-top: 10px;
+  }
+
+  .topbar-contact-info {
+    text-align: left;
+  }
+  .topbar-contact-info ul li {
+    padding: 0 10px;
+  }
+  .lang-flag {
+    float: left;
+    position: relative;
+  }
+  .lang-flag .flag {
+    padding: 9px 15px 5px 0;
+  }
+  .lang-flag .language {
+    right: inherit;
+    left: 0;
+  }
+  .log-reg-btn {
+    float: right;
+  }
+  .top-right-list.text-right {
+    text-align: left;
+  }
+  .top-social {
+    float: none;
+    position: relative;
+  }
+  .top-social ul.list-rs {
+    display: none;
+    text-align: left;
+    position: absolute;
+    min-width: 235px;
+    z-index: 9;
+    background: #202020;
+  }
+  .top-social ul.list-rs li a {
+    color: #fff;
+  }
+  .top-social li {
+    border: 0px;
+  }
+  .header:after {
+    display: none;
+  }
+  .header {
+    background: #c2a275;
+  }
+  .header .col-xs-12 {
+    margin-top: -66px;
+  }
+  .logo:before {
+    display: none;
+  }
+  .logo:after {
+    display: none;
+  }
+  .logo {
+    text-align: center;
+    height: auto;
+  }
+  .logo > a {
+    height: auto;
+    padding: 20px 0;
+  }
+  .logo img {
+    display: inline-block;
+  }
+  #menuzord {
+    background: none;
+  }
+  #menuzord .showhide {
+    padding-top: 25px;
+  }
+  #menuzord .showhide > em {
+    background: #fff;
+  }
+  #menuzord .menuzord-list {
+    font-size: 0;
+  }
+  #menuzord .menuzord-list li > a {
+    padding: 24px 10px 22px;
+  }
+  #menuzord .menuzord-list li > a:hover,
+  #menuzord .menuzord-list li > a:focus,
+  #menuzord .menuzord-list li > a.active {
+    color: #fff;
+  }
+  #menuzord .menuzord-list li .dropdown {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+  }
+  #menuzord .menuzord-list li .dropdown a {
+    padding: 5px 10px;
+  }
+  .infinity-scroll,
+  .form-logo {
+    display: none;
+  }
+  .slider-booking-form:after {
+    border-width: 30px 150px 0;
+    bottom: -30px;
+  }
+  .slider-booking-form {
+    padding: 15px;
+    max-width: 300px;
+  }
+  .form-group {
+    width: 100%;
+  }
+  .service-content {
+    margin-bottom: 40px;
+  }
+  .location {
+    padding-bottom: 60px;
+  }
+  #blog-slider .owl-wrapper-outer {
+    margin-bottom: 0;
+  }
+  .service-icon {
+    margin-right: 20px;
+  }
+  .offer .offer-img:last-child {
+    margin-top: 20px;
+  }
+  .offer-img:after {
+    display: none;
+  }
+  .offer-hover-text {
+    padding: 15px;
+  }
+  .offer-hover-text p,
+  .offer-hover-text div {
+    display: none;
+  }
+  .staff-title-info {
+    padding: 5px 0;
+    width: 80%;
+  }
+  .cta {
+    padding: 100px 0;
+  }
+  .cta .col-lg-3 {
+    text-align: center;
+  }
+  .cta .btn {
+    margin-top: 50px;
+  }
+  .cta .text-right {
+    text-align: center;
+  }
+  .cta-content {
+    text-align: center;
+  }
+  .cta-content h3 {
+    padding: 0px;
+  }
+  .owl-controls {
+    display: none!important;
+  }
+  #testimonial-slider .item:before {
+    display: none;
+  }
+  .section-heading h2 {
+    font-size: 30px;
+  }
+  .single-title-line {
+    left: 5px;
+    top: 45px;
+  }
+  .content {
+    text-align: center;
+  }
+  #store-slider {
+    margin-top: 50px;
+  }
+  .store .section-heading {
+    margin-top: 0;
+  }
+  #brand-slider img {
+    display: inline-block;
+  }
+  #tweet-slider .owl-item {
+    text-align: center;
+  }
+  .tweet:before {
+    display: none;
+  }
+  .phone-number:before {
+    display: none;
+  }
+  .phone-number:after {
+    display: none;
+  }
+  .phone-number {
+    font-size: 24px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .phone-number .phone-icon {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  .copyright {
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .payment-icon {
+    text-align: center;
+  }
+  .room-suites .col-lg-4 {
+    text-align: center;
+  }
+  .room-content:after {
+    border-width: 65px 65px 0 0;
+  }
+  .room-content {
+    display: inline-block;
+  }
+  .room-content:hover .hover-content {
+    top: 55%;
+  }
+  .room-content .hover-content .btn {
+    margin-top: 0;
+  }
+  .gallery-img .m-t-10 {
+    margin-top: 0px;
+  }
+  .banner-content {
+    padding-bottom: 0;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .breadcrumb {
+    padding-bottom: 50px;
+    padding-top: 15px;
+    text-align: center;
+  }
+  .hotel-weeding-left {
+    position: relative;
+    left: 0px;
+    padding: 33px 15px;
+    text-align: center;
+  }
+  .countdown-parts {
+    margin: 15px auto;
+  }
+  .hotel-weeding {
+    position: relative;
+    right: 0px;
+    text-align: center;
+    padding: 33px 15px;
+    top: 0px;
+  }
+  .responsive-padding {
+    padding-right: 15px;
+  }
+  .responisve-margin {
+    margin-top: 30px;
+  }
+  .weeding-img img {
+    width: 100%;
+  }
+  .scroll-icon {
+    margin-top: -128px;
+    margin-bottom: 0;
+  }
+  .our-service .section-heading {
+    margin-top: 100px;
+  }
+  .our-service .service-content {
+    margin-bottom: 0;
+  }
+  .more-slider .owl-item {
+    padding: 0 10px;
+  }
+  .accordion-area {
+    margin-top: 100px;
+  }
+  .facilities.m-t-80 {
+    margin-top: 0;
+  }
+  iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .accordion-area .accordion-menu .panel .panel-heading a {
+    padding: 20px;
+  }
+  .accordion-area .accordion-menu .panel .panel-heading a h4 i {
+    margin-left: 0;
+    margin-right: -10px;
+  }
+  .reservation-btn {
+    margin-top: 20px;
+  }
+  .room-offer {
+    text-align: center;
+  }
+  #location-slider .owl-item {
+    padding: 0 10px;
+  }
+  .pagination-section {
+    margin-bottom: 100px;
+  }
+  .instragram li {
+    padding-bottom: 0;
+  }
+  .bottom {
+    padding-bottom: 50px;
+  }
+  .bottom .row > div {
+    margin-bottom: 50px;
+  }
+  #side-blog {
+    margin-top: 45px;
+  }
+  .map-location .col-sm-6.p-r-0 {
+    padding-left: 0;
+  }
+  .map-location .img-location img {
+    width: auto;
+  }
+  .social-link-area .col-md-15 .link-area {
+    padding: 15px 0 10px;
+  }
+  .social-link-area .col-md-15 .link-area i {
+    display: block;
+    margin: 0 auto 5px;
+  }
+  .contact-email .col-md-6 + .col-md-6 {
+    margin-top: 30px;
+  }
+  .add-space {
+    display: none;
+  }
+  .room-overview-section {
+    margin-top: 55px;
+  }
+  .rooms-single .col-sm-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+/*  4 - media screen and (min-width: 480px) and (max-width: 767px)
+---------------------------------------------------------------------- */
+/* bug menu */
+@media (max-width: 768px) {
+  #menuzord {
+    background: none;
+  }
+  #menuzord .showhide {
+    padding-top: 25px;
+  }
+  #menuzord .showhide > em {
+    background: #fff;
+  }
+  #menuzord .menuzord-list {
+    font-size: 0;
+    margin-top: 20px;
+  }
+  #menuzord .menuzord-list li > a {
+    padding: 12px 0;
+  }
+  #menuzord .menuzord-list li > a:hover,
+  #menuzord .menuzord-list li > a:focus,
+  #menuzord .menuzord-list li > a.active {
+    color: #fff;
+  }
+  #menuzord .menuzord-list li .dropdown {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+  }
+  #menuzord .menuzord-list li .dropdown a {
+    padding: 5px 10px;
+  }
+  #menuzord .menuzord-list li > a > i.icofont-search {
+    float: none;
+  }
+}
+@media (max-width: 767px) {
+    .topbar {
+      padding-top: 10px;
+    }
+    .topbar-contact-info {
+      text-align: left;
+      display: none;
+    }
+    .instagram-gallery {
+      /*margin-top: 65px;*/
+       width: 100%; 
+    }
+	.instagram-gallery  .display-inline {
+		margin-right: 20px;
+	}
+	.our-service .col-xs-6 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+    .instagram-gallery .m-r-10 {
+      margin-right: 0px;
+    }
+    .topbar-contact-info ul li {
+      padding: 0 10px;
+    }
+    .lang-flag {
+      float: left;
+      position: relative;
+    }
+    .lang-flag .flag {
+      padding: 9px 15px 5px 0;
+    }
+    .lang-flag .language {
+      right: inherit;
+      left: 0;
+    }
+    .log-reg-btn {
+      float: right;
+      margin-top: 4px;
+    }
+    .top-right-list.text-right {
+      text-align: left;
+    }
+    .top-social {
+      float: none;
+      position: relative;
+    }
+    .top-social ul.list-rs {
+      display: none;
+      text-align: left;
+      position: absolute;
+      min-width: 235px;
+      z-index: 9;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    .top-social ul.list-rs li a {
+      color: #fff;
+    }
+    .top-social li {
+      border: 0px;
+    }
+    .header:after {
+      display: none;
+    }
+    .header {
+      background: #c2a275;
+    }
+    .header .col-xs-12 {
+      margin-top: -66px;
+    }
+    .logo:before {
+      display: none;
+    }
+    .logo:after {
+      display: none;
+    }
+    .logo {
+      text-align: center;
+      height: auto;
+    }
+    .logo > a {
+      height: auto;
+      padding: 20px 0;
+    }
+    .logo img {
+      display: inline-block;
+    }
+    #menuzord {
+      background: none;
+    }
+    #menuzord .showhide {
+      padding-top: 25px;
+    }
+    #menuzord .showhide > em {
+      background: #fff;
+    }
+    #menuzord .menuzord-list {
+      font-size: 0;
+      margin-top: 20px;
+    }
+    #menuzord .menuzord-list li > a {
+      padding: 12px 0;
+    }
+    #menuzord .menuzord-list li > a:hover,
+    #menuzord .menuzord-list li > a:focus,
+    #menuzord .menuzord-list li > a.active {
+      color: #fff;
+    }
+    #menuzord .menuzord-list li .dropdown {
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+    }
+    #menuzord .menuzord-list li .dropdown a {
+      padding: 5px 10px;
+    }
+    #menuzord .menuzord-list li > a > i.icofont-search {
+      float: none;
+    }
+    .infinity-scroll,
+    .form-logo {
+      display: none;
+    }
+    .slider-booking-form:after {
+      border-width: 30px 150px 0;
+      bottom: -30px;
+    }
+    .slider-booking-form {
+      padding: 15px;
+      max-width: 300px;
+      display: none;
+    }
+    .section-padding {
+      padding: 40px 0;
+    }
+    .our-service.m-t-100 {
+      margin-top: 40px;
+    }
+    .form-group {
+      width: 100%;
+    }
+    .history .link {
+      margin-bottom: 40px;
+    }
+    .history-content {
+      margin-top: 40px;
+    }
+    .service-icon {
+      margin-right: 20px;
+    }
+    .offer .offer-img:last-child {
+      margin-top: 20px;
+    }
+    .offer-img:after {
+      display: none;
+    }
+    .offer-hover-text {
+      padding: 15px;
+    }
+    .offer-hover-text p,
+    .offer-hover-text div {
+      display: none;
+    }
+    .staff-title-info {
+      padding: 5px 0;
+      width: 70%;
+    }
+    .location {
+      padding-bottom: 40px;
+    }
+    .cta {
+      padding: 100px 0;
+    }
+    .cta .col-lg-3 {
+      text-align: center;
+    }
+    .cta .btn {
+      margin-top: 50px;
+    }
+    .cta .text-right {
+      text-align: center;
+    }
+    .cta-content {
+      text-align: center;
+    }
+    .cta-content h3 {
+      padding: 0px;
+    }
+    #testimonial-slider .owl-controls {
+      display: none!important;
+    }
+    .owl-buttons {
+      display: none!important;
+    }
+/*    .owl-wrapper-outer .owl-controls {
+      display: block;
+    }*/
+    #blog-slider .owl-wrapper-outer {
+      margin-bottom: 0;
+    }
+    .filter-btn {
+      padding: 7px 30px;
+    }
+    .room-suites {
+      text-align: center;
+    }
+    #testimonial-slider .owl-item {
+      padding-left: 0;
+    }
+    #testimonial-slider .item:before {
+      display: none;
+    }
+    #testimonial-slider .content .t-content {
+      max-width: inherit;
+    }
+    .section-heading h2 {
+      font-size: 21px;
+      margin-bottom: 25px;
+    }
+    .single-title-line {
+      left: 5px;
+      top: 45px;
+    }
+    .content {
+      text-align: center;
+    }
+    .offer .col-sm-6 {
+      text-align: center;
+    }
+    .offer .offer-img {
+      display: inline-block;
+    }
+    .history .col-sm-6 + .col-sm-6 {
+      text-align: center;
+    }
+    .store .section-heading {
+      margin-top: 0;
+    }
+    .service-icon-area {
+      text-align: left;
+    }
+    .service-icon-area .service-icon {
+      /*width: 60px;*/
+      height: 60px;
+      padding: 15px;
+    }
+
+    #store-slider {
+      margin-top: 50px;
+    }
+    #brand-slider img {
+      display: inline-block;
+    }
+    #tweet-slider .owl-item {
+      text-align: center;
+    }
+    #tweet-slider .item i {
+      margin-right: 0;
+    }
+    .tweet:before {
+      display: none;
+    }
+    .phone-number:before {
+      display: none;
+    }
+    .phone-number:after {
+      display: none;
+    }
+    .phone-number {
+      font-size: 24px;
+      text-align: center;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+    .phone-number .phone-icon {
+      font-size: 24px;
+      margin-right: 8px;
+    }
+    .copyright {
+      padding-bottom: 15px;
+      text-align: center;
+    }
+    .payment-icon {
+      text-align: center;
+    }
+    .room-suites .col-lg-4 {
+      text-align: center;
+    }
+    .room-suites .room-content {
+      display: inline-block;
+    }
+    .gallery-img .m-t-10 {
+      margin-top: 0px;
+    }
+    .service-icon-area {
+      text-align: center;
+    }
+    .service-icon-content {
+      margin-top: 15px;
+    }
+    .banner-content {
+      padding-bottom: 0;
+      padding-top: 50px;
+      text-align: center;
+    }
+    .breadcrumb {
+      padding-bottom: 50px;
+      padding-top: 15px;
+      text-align: center;
+    }
+    .hotel-weeding-left {
+      position: relative;
+      left: 0px;
+      padding: 33px 15px;
+      text-align: center;
+    }
+    .countdown-parts {
+      margin: 15px auto;
+    }
+    .hotel-weeding {
+      position: relative;
+      right: 0px;
+      text-align: center;
+      padding: 33px 15px;
+      top: 0px;
+    }
+    .responsive-padding {
+      padding-right: 15px;
+    }
+    .responisve-margin {
+      margin-top: 30px;
+    }
+    .weeding-img img {
+      width: 100%;
+    }
+    .scroll-icon {
+      margin-top: -128px;
+      margin-bottom: 0;
+    }
+    .our-service .section-heading {
+      margin-top: 100px;
+    }
+    .our-service .service-content {
+      margin-bottom: 0;
+    }
+    .more-slider .owl-item {
+      padding: 0 10px;
+    }
+    .accordion-area {
+      margin-top: 100px;
+    }
+    .facilities.m-t-80 {
+      margin-top: 0;
+    }
+    iframe {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+    .accordion-area .accordion-menu .panel .panel-heading a {
+      padding: 20px;
+    }
+    .accordion-area .accordion-menu .panel .panel-heading a h4 i {
+      margin-left: 0;
+      margin-right: -17px;
+      margin-top: -10px;
+    }
+    .reservation-btn {
+      margin-top: 20px;
+    }
+    .room-offer {
+      text-align: center;
+    }
+    #location-slider .owl-item {
+      padding: 0 10px;
+    }
+    .luxurious-hotel .price {
+      margin-left: 0;
+    }
+    .pagination-section {
+      margin-bottom: 100px;
+    }
+    .custom-pagination li {
+      padding: 0;
+    }
+    .custom-pagination li a {
+      padding: 6px 7px 4px;
+    }
+    .instragram li {
+      padding-bottom: 0;
+    }
+    .blog-post .single-title-line {
+      display: none;
+    }
+    .bottom {
+      padding-bottom: 50px;
+    }
+    .bottom .row > div {
+      margin-bottom: 50px;
+    }
+    .social-link ul li {
+      margin: 0 5px;
+    }
+    .media-left,
+    .media-right,
+    .media-body {
+      display: block;
+      padding: 0;
+      text-align: center;
+    }
+    .media-left {
+      margin-bottom: 20px;
+    }
+    .author-signature {
+      bottom: -70px;
+      right: -45px;
+    }
+    #side-blog {
+      margin-top: 45px;
+    }
+    .map-location .col-sm-6.p-r-0 {
+      padding-left: 0;
+    }
+    .map-location .col-sm-6 .img-location {
+      text-align: center;
+    }
+    .map-location .col-sm-6 .img-location img {
+      width: auto;
+      margin: 0 auto;
+    }
+    .map-location .col-sm-6.p-l-0 {
+      padding-right: 0;
+      border: none;
+    }
+    .map-location .col-sm-6 .address {
+      padding: 20px;
+    }
+    .social-link-area .col-md-15 {
+      float: none;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 20px;
+    }
+    .social-link-area .col-md-15:first-child {
+      margin-top: 0;
+    }
+    .social-link-area .col-md-15 .link-area {
+      padding: 20px 10px;
+    }
+    .contact-email .col-md-6 + .col-md-6 {
+      margin-top: 30px;
+    }
+    .room-price {
+      padding: 10px 5px 0;
+      max-width: 105px;
+    }
+    .room-price:before {
+      border-width: 15px 52px 0;
+      top: 69px;
+    }
+    .room-price p {
+      font-size: 20px;
+    }
+    .room-price span {
+      margin-bottom: 5px;
+    }
+    .add-space {
+      display: none;
+    }
+    .room-overview-section {
+      margin-top: 55px;
+    }
+    .rooms-single .room-offer img {
+      width: auto;
+      margin: 0 auto;
+    }
+    .room-overview-services {
+      padding: 30px 15px 15px;
+    }
+    .room-overview-services .col-md-15 {
+      min-height: 100px;
+      width: 33%;
+    }
+    .room-overview-services h5 {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 5px;
+    }
+    .review-rating li span.add-review {
+      padding-left: 0;
+      margin-right: 0;
+      border-left: none;
+    }
+    .review-rating.single-review {
+      top: -20px;
+    }
+}
+/*  6 - Retina
+/*------------------------------- Retina --------------------------------*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .default-logo {
+    display: none !important;
+  }
+  .retina-logo {
+    display: inline-block !important;
+  }
+}
