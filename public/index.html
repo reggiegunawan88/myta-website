@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge'><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Cheno">
+    <meta name="author" content="Reggie">
     <meta name="description" content="">
-    <link rel="icon" href="assets/images/myta-background.png">
+    <link rel="icon" href="assets/images/myta-red.png">
     <title>Myta - My Travel Assistant</title>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -15,691 +15,143 @@
 
     <!-- Contribute CSS Files -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/icofont.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/menuzord.css">
 
-    <!-- Custom CSS Files -->
+    <!-- Custom CSS and Font Files -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
-
-    <!-- Js for HTML5 & responsive -->
-    <!--[if lt IE 9]>
-		<script src="assets/js/html5shiv.js"></script>
-		<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
 </head>
 
 <body>
     <!-- Header Section -->
     <div class="header">
-        <div class="container">
+        <div class="container cont-header">
             <div class="row">
                 <div class="col-sm-6">
                     <a href="#">
-                        <img class="m-t-30" style="width: 272px; height: 96px;"
-                            src="./Asset/Icon & Image/myta-logo.png">
+                        <p id="myta-text">Myta.Ai</p>
                     </a>
                 </div>
-                <div class="col-sm-6">
-                    <p class="m-t-30" id="language-text">Language : English</p>
+                <div class="col-sm-6" style="text-align: right;">
+                    <button id="btn-top">
+                        <a href="./pages/register.html">
+                            <p style="color: #3199c5">Chatbot for your Hotel?</p>
+                        </a>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Header Section -->
 
-    <!-- Slider Section -->
-    <div class="home-slider section-padding m-t-50">
-        <!-- <div class="overlay" style="border-radius: 20px; box-shadow: 3px 5px 7px 0 rgba(0, 0, 0, 0.16);"> -->
-    </div>
-    <div class="container wrapper-introducing">
-        <div class="row" style="padding: 20px">
-            <div class="col-sm-8">
-                <p id="introducing-myta-text">Introducing Myta,<br>
-                    your virtual assistant for travel!</p>
-                <p class="m-t-40" id="myta-desc">
-                    Myta, Talkabot's chatbot that come to help reservation problem for your journey. Just with one
-                    chat applications that has installed on your device, Myta will manage your lodging very easily.
-                </p>
-                <button onclick="clickButton()" class="m-t-30" id="btn-bookNow">
-                    Book Now!
-                </button>
-                <div class="m-t-30">
-                    <p id="myta-desc">With Love,</p>
-                    <p id="myta-signature">Myta</p>
-                    <p id="myta-desc">Myta</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <img id="myta-img" src="./Asset/Myta/Artboard 1@2x.png">
-            </div>
-            <!-- <div class="item"><img id="myta-img" src="../public/Asset/Myta/Artboard 1@2x.png"></div> -->
-        </div>
-    </div>
-    </div>
-    <!-- End Slider Section -->
-
-    <!-- Our Service Section -->
-    <div class="our-service m-t-50 m-b-60">
+    <!-- Myta Chatbot Section -->
+    <div class="myta-upper m-t-40">
         <div class="container">
-            <div class="row">
-                <p id="why-choose-myta">Why Choose Myta?</p>
+            <div class="row center" style="padding: 20px">
+                <img src="./assets/images/myta-red.png">
+                <p style="font-weight: bold; font-family: 'Poppins', 'sans-serif'; color: #ffff">MYTA</p>
+                <p style="font-family: 'Lato', 'sans-serif'; color: #ffff">Available</p>
             </div>
-            <div class="row m-t-50 m-r-10 gallery" style="text-align: center">
-                <div class="col-sm-3">
-                    <img src="./Asset/Icon & Image/stopwatch.png">
-                    <div class="m-t-30">
-                        <p><b>Always Ready</b></p>
-                        <p>24/7 ready to serve you.</p>
-                    </div>
+            <div class="row center">
+                <div class="row">
+                    <button id="iframe-title" disabled>
+                        <p>Hotel Booking</p>
+                    </button>
                 </div>
-                <div class="col-sm-3">
-                    <img src="./Asset/Icon & Image/building.png">
-                    <div class="m-t-30">
-                        <p><b>Easy To Use</b></p>
-                        <p>Without any additional application, Myta can be use on any communication apps.</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <img src="./Asset/Icon & Image/target.png">
-                    <div class="m-t-30">
-                        <p><b>Accurate</b></p>
-                        <p>Myta will give the best choice for you.</p>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <img src="./Asset/Icon & Image/running.png">
-                    <div class="m-t-30">
-                        <p><b>Fast</b></p>
-                        <p>Without open any sites, Myta provides you everything.</p>
-                    </div>
+                <div class="row">
+                    <iframe id="iframe-chatbot" src="https://google.com"></iframe>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Our Service Section -->
+    </div>
+    <!-- End Myta Chatbot Section -->
 
-    <!-- Offer Section -->
-    <div class="offer section-padding">
-        <div class="overlay" style="border-radius: 20px; box-shadow: 3px 5px 7px 0 rgba(0, 0, 0, 0.16);"></div>
+    <!-- Myta Mid Section -->
+    <div class="myta-mid">
         <div class="container">
-            <div class="row">
-                <div class="section-heading text-center">
-                    <h2>How Myta Works?</h2>
-                    <div class="row m-t-50 m-b-30 gallery" style="font-weight: bold">
-                        <div class="col-sm-4">
-                            <img src="./Asset/Icon & Image/love.png">
-                            <div class="m-t-30">
-                                <p><b>Chat Myta</b></p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="./Asset/Icon & Image/tap.png">
-                            <div class="m-t-30">
-                                <p><b>Order Hotel</b></p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <img src="./Asset/Icon & Image/clipboard.png">
-                            <div class="m-t-30">
-                                <p><b>Verification</b></p>
-                            </div>
+            <div class="row myta-deal-section">
+                <div class="row">
+                    <div class="myta-deal-text">
+                        <p id="myta-deal-title">Myta's Top Deal</p>
+                        <p id="myta-deal-desc">Need some promo? Myta undestand your needs!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="myta-deal-list">
+                        <div class="slider">
+                            <div class="slide" id="slide-1"><img src="./assets/images/discount-img.png"></div>
+                            <div class="slide" id="slide-2"><img src="./assets/images/discount-img-2.png"></div>
+                            <div class="slide" id="slide-3"><img src="./assets/images/discount-img.png"></div>
+                            <div class="slide" id="slide-4"><img src="./assets/images/discount-img-2.png"></div>
+                            <div class="slide" id="slide-5"><img src="./assets/images/discount-img.png"></div>
+                            <div class="slide" id="slide-6"><img src="./assets/images/discount-img-2.png"></div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row hotel-partner-section">
+                <div class="row">
+                    <div class="myta-deal-text">
+                        <p id="myta-deal-title">Hotels Partner</p>
+                        <p id="myta-deal-desc">Here some hotels that we recommend!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="myta-deal-list">
+                        <div class="slider">
+                            <div class="slide" id="slide-1"><img src="./assets/images/discount-img.png"></div>
+                            <div class="slide" id="slide-2"><img src="./assets/images/discount-img-2.png"></div>
+                            <div class="slide" id="slide-3"><img src="./assets/images/discount-img.png"></div>
+                            <div class="slide" id="slide-4"><img src="./assets/images/discount-img-2.png"></div>
+                            <div class="slide" id="slide-5"><img src="./assets/images/discount-img.png"></div>
+                            <div class="slide" id="slide-6"><img src="./assets/images/discount-img-2.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row myta-cloud center m-t-55">
+                <img src="./assets/images/myta-cloud.png">
+                <p>Have Problem?</p>
+                <button id="send-email-btn">Send Email</button>
+            </div>
         </div>
     </div>
-    <!-- End Offer Section -->
+    <!-- End Myta Mid Section -->
 
-
-    <!-- Location Section -->
-    <div class="location">
+    <!-- Myta Footer Section -->
+    <div class="myta-footer section-padding">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12" style="top: 50px;">
-                    <div class="section-heading text-center">
-                        <h2>Myta Hotel Partner</h2>
-                        <p class="m-t-50">Myta give the special choices to make you easy </p>
+                <div class="col-sm-6" style="text-align: left">
+                    <div class="footer-text">
+                        <p>Myta.ai</p>
+                        <p>+62800000000</p>
+                        <p>mailto@myta.ai</p>
                     </div>
-                    <div id="location-slider" class="control-pagination m-t-50 text-center pr">
-                        <div class="item">
-                            <div class="location-img m-b-40">
-                                <img style="height: 214px; width: 250px" class="img-responsive"
-                                    src="assets/images/hotel_jakarta/shangrila.jpg">
-                                <div class="location-content">
-                                    <div class="location-hover-text">
-                                        <h4>Shangri-La Hotel</h4>
-                                        <p>(124 Rooms)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="location-img m-b-40">
-                                <img style="height: 214px; width: 250px" class="img-responsive"
-                                    src="assets/images/hotel_jakarta/raffles.jpg">
-                                <div class="location-content">
-                                    <div class="location-hover-text">
-                                        <h4>Raffles Hotel</h4>
-                                        <p>(124 Rooms)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="location-img m-b-40">
-                                <img style="height: 214px; width: 250px" class="img-responsive"
-                                    src="assets/images/hotel_jakarta/pullman.jpg">
-                                <div class="location-content">
-                                    <div class="location-hover-text">
-                                        <h4>Pullman Hotel</h4>
-                                        <p>(124 Rooms)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="location-img m-b-40">
-                                <img style="height: 214px; width: 250px" class="img-responsive"
-                                    src="assets/images/hotel_jakarta/mandarin.jpg">
-                                <div class="location-content">
-                                    <div class="location-hover-text">
-                                        <h4>Mandarin Oriental Hotel</h4>
-                                        <p>(124 Rooms)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="location-img m-b-40">
-                                <img style="height: 214px; width: 250px" class="img-responsive"
-                                    src="assets/images/hotel_jakarta/kempinski.jpg">
-                                <div class="location-content">
-                                    <div class="location-hover-text">
-                                        <h4>Kempinski Hotel</h4>
-                                        <p>(124 Rooms)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="location-img m-b-40">
-                                <img style="height: 214px; width: 250px" class="img-responsive"
-                                    src="assets/images/hotel_jakarta/hyatt.jpg">
-                                <div class="location-content">
-                                    <div class="location-hover-text">
-                                        <h4>Grand-Hyatt Hotel</h4>
-                                        <p>(124 Rooms)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="location-img m-b-40">
-                                <img style="height: 214px; width: 250px" class="img-responsive"
-                                    src="assets/images/hotel_jakarta/gran-melia.jpg">
-                                <div class="location-content">
-                                    <div class="location-hover-text">
-                                        <h4>Gran Melia Hotel</h4>
-                                        <p>(124 Rooms)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="location-img m-b-40">
-                                <img style="height: 214px; width: 250px" class="img-responsive"
-                                    src="assets/images/hotel_jakarta/fairmont.jpg">
-                                <div class="location-content">
-                                    <div class="location-hover-text">
-                                        <h4>Fairmont Hotel</h4>
-                                        <p>(124 Rooms)</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-sm-6" style="text-align: right">
+                    <p>Contact Us</p>
+                    <div class="footer-social m-t-10">
+                        <a style="margin: 10px"><img src="./assets/images/socmed/001-whatsapp.png"></a>
+                        <a style="margin: 10px"><img src="./assets/images/socmed/002-line.png"></a>
+                        <a style="margin: 10px"><img src="./assets/images/socmed/003-telegram.png"></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- End Location Section-->
-
-    <!-- Testimonial Section -->
-    <div class="testimonial section-padding hidden">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h2>Our Customer's Testimony</h2>
-                    </div>
-                    <div id="testimonial-slider" class="m-t-50 text-center pr">
-                        <div class="item text-left">
-                            <div class="content m-t-30">
-                                <i class="fa fa-quote-left gold" aria-hidden="true"></i>
-                                <p class="t-content">
-                                    Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui
-                                    sequitur mutationem.</p>
-                                <img src="assets/images/client1.png" alt="The Last of us">
-                                <h4>Jeniffer Doe<span><br>(Director)</span></h4>
-                            </div>
-                        </div>
-                        <div class="item text-left">
-                            <div class="content m-t-30">
-                                <i class="fa fa-quote-left gold" aria-hidden="true"></i>
-                                <p class="t-content">
-                                    Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui
-                                    sequitur mutationem.</p>
-                                <img src="assets/images/client2.png" alt="The Last of us">
-                                <h4>H. Akshay <span><br>(Director)</span></h4>
-                            </div>
-                        </div>
-                        <div class="item text-left">
-                            <div class="content m-t-30">
-                                <i class="fa fa-quote-left gold" aria-hidden="true"></i>
-                                <p class="t-content">
-                                    Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui
-                                    sequitur mutationem.</p>
-                                <img src="assets/images/client3.png" alt="The Last of us">
-                                <h4>Jack Josaf<span><br>(Director)</span></h4>
-                            </div>
-                        </div>
-                        <div class="item text-left">
-                            <div class="content m-t-30">
-                                <i class="fa fa-quote-left gold" aria-hidden="true"></i>
-                                <p class="t-content">
-                                    Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui
-                                    sequitur mutationem.</p>
-                                <img src="assets/images/client2.png" alt="The Last of us">
-                                <h4>H. Akshay <span><br>(Director)</span></h4>
-                            </div>
-                        </div>
-                        <div class="item text-left">
-                            <div class="content m-t-30">
-                                <i class="fa fa-quote-left gold" aria-hidden="true"></i>
-                                <p class="t-content">
-                                    Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui
-                                    sequitur mutationem.</p>
-                                <img src="assets/images/client3.png" alt="The Last of us">
-                                <h4>Jack Josaf<span><br>(Director)</span></h4>
-                            </div>
-                        </div>
-                        <div class="item text-left">
-                            <div class="content m-t-30">
-                                <i class="fa fa-quote-left gold" aria-hidden="true"></i>
-                                <p class="t-content">
-                                    Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui
-                                    sequitur mutationem.</p>
-                                <img src="assets/images/client1.png" alt="The Last of us">
-                                <h4>Jeniffer Doe<span><br>(Director)</span></h4>
-                            </div>
-                        </div>
-                        <div class="item text-left">
-                            <div class="content m-t-30">
-                                <i class="fa fa-quote-left gold" aria-hidden="true"></i>
-                                <p class="t-content">
-                                    Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui
-                                    sequitur mutationem.</p>
-                                <img src="assets/images/client2.png" alt="The Last of us">
-                                <h4>H. Akshay <span><br>(Director)</span></h4>
-                            </div>
-                        </div>
-                        <div class="item text-left">
-                            <div class="content m-t-30">
-                                <i class="fa fa-quote-left gold" aria-hidden="true"></i>
-                                <p class="t-content">
-                                    Claritas etiam processus dynamicus, qur mutationem. Claritas tiam procsus dycus, qui
-                                    sequitur mutationem.</p>
-                                <img src="assets/images/client3.png" alt="The Last of us">
-                                <h4>Jack Josaf<span><br>(Director)</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row center m-t-70">
+                <p>Crafted by Hand and Love</p>
             </div>
         </div>
     </div>
-    <!-- End Testimonial Section -->
-
-    <!-- Blog Section -->
-    <div class="blog section-padding" style="display: none">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading text-center">
-                        <h2>Latest From Blog</h2>
-                        <span class="single-title-left"></span>
-                        <span class="single-title-center"></span>
-                        <span class="single-title-right"></span>
-                        <p class="m-t-30">There are many variations of passages of Lorem Ipsu ail able, but the ity have
-                            suffered alon in a some am, by injected humour, or randomsed words.</p>
-                    </div>
-                    <div id="blog-slider" class="control-pagination pagination-circle-control m-t-50 text-center pr">
-                        <div class="item">
-                            <div class="img-content">
-                                <div class="overlay"></div>
-                                <img class="img-responsive" src="assets/images/blog1.jpg" alt="The Last of us">
-                                <div class="meta">
-                                    <span><i class="icofont icofont-calendar m-r-14"></i> June 12, 2016</span>
-                                    <span><i class="icofont icofont-comment m-r-14"></i> 04 Comments</span>
-                                </div>
-                            </div>
-                            <div class="content text-left">
-                                <h2 class="m-t-38">One Of The Best Places Here..</h2>
-                                <p class="m-t-17">There are many variations of passages of Lorem Ipsu ail able, but the
-                                    ity have sufferedalon in a some am, by injected humour, or randomsed words.</p>
-                                <div class="read-button">
-                                    <a class="btn btn-lg color-btn m-t-25" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="assets/images/blog2.jpg" alt="The Last of us">
-                            <div class="content text-left">
-                                <h2 class="m-t-38">One Of The Best Places Here..</h2>
-                                <p class="m-t-17">There are many variations of passages of Lorem Ipsu ail able, but the
-                                    ity have sufferedalon in a some am, by injected humour, or randomsed words.</p>
-                                <div class="read-button">
-                                    <a class="btn btn-lg color-btn m-t-25" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="assets/images/blog1.jpg" alt="The Last of us">
-                            <div class="content text-left">
-                                <h2 class="m-t-38">One Of The Best Places Here..</h2>
-                                <p class="m-t-17">There are many variations of passages of Lorem Ipsu ail able, but the
-                                    ity have sufferedalon in a some am, by injected humour, or randomsed words.</p>
-                                <div class="read-button">
-                                    <a class="btn btn-lg color-btn m-t-25" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="assets/images/blog2.jpg" alt="The Last of us">
-                            <div class="content text-left">
-                                <h2 class="m-t-38">One Of The Best Places Here..</h2>
-                                <p class="m-t-17">There are many variations of passages of Lorem Ipsu ail able, but the
-                                    ity have sufferedalon in a some am, by injected humour, or randomsed words.</p>
-                                <div class="read-button">
-                                    <a class="btn btn-lg color-btn m-t-25" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="assets/images/blog1.jpg" alt="The Last of us">
-                            <div class="content text-left">
-                                <h2 class="m-t-38">One Of The Best Places Here..</h2>
-                                <p class="m-t-17">There are many variations of passages of Lorem Ipsu ail able, but the
-                                    ity have sufferedalon in a some am, by injected humour, or randomsed words.</p>
-                                <div class="read-button">
-                                    <a class="btn btn-lg color-btn m-t-25" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive" src="assets/images/blog2.jpg" alt="The Last of us">
-                            <div class="content text-left">
-                                <h2 class="m-t-38">One Of The Best Places Here..</h2>
-                                <p class="m-t-17">There are many variations of passages of Lorem Ipsu ail able, but the
-                                    ity have sufferedalon in a some am, by injected humour, or randomsed words.</p>
-                                <div class="read-button">
-                                    <a class="btn btn-lg color-btn m-t-25" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Blog Section -->
-
-    <!-- Store Section -->
-    <div class="store section-padding m-t-50">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row" style="font-size:20px; text-align: left">
-                <div class="col-sm-6">
-                    <div class="section-heading">
-                        <h2 id="ask-myta-text">Ask Myta on Chat Apps</h2>
-                    </div>
-                    <div class="store-content m-t-20">
-                        <p>Myta is available too on your mobile chat apps, so easily book your Hotel with Myta help!</p>
-                        <div class="">
-                            <a href="#"><img style="width: 50px !important;"  class="socmed-btn" src="./Asset/Icon & Image/whatsapp.png" alt=""></a>
-                            <a href="#"><img class="socmed-btn" src="./Asset/Icon & Image/line.png" alt=""></a>
-                            <a href="#"><img class="socmed-btn" src="./Asset/Icon & Image/telegram.png" alt=""></a>
-                        </div>
-                        <p>Contact Us : <br> mailto.info@myta.ai</p>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <img id="myta-phone" src="./Asset/Icon & Image/myta-half-mobile.png">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Store Section -->
-
-    <!-- End Brand Section -->
-    <div class="brand section-padding" style="display: none">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div id="brand-slider" class="text-center pr">
-                        <div class="item">
-                            <a href="#"><img class="img-responsive grayscale" src="assets/images/brand1.png"
-                                    alt="The Last of us"></a>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-responsive grayscale" src="assets/images/brand2.png"
-                                    alt="The Last of us"></a>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-responsive grayscale" src="assets/images/brand3.png"
-                                    alt="The Last of us"></a>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-responsive grayscale" src="assets/images/brand4.png"
-                                    alt="The Last of us"></a>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-responsive grayscale" src="assets/images/brand5.png"
-                                    alt="The Last of us"></a>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-responsive grayscale" src="assets/images/brand6.png"
-                                    alt="The Last of us"></a>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-responsive grayscale" src="assets/images/brand1.png"
-                                    alt="The Last of us"></a>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-responsive grayscale" src="assets/images/brand2.png"
-                                    alt="The Last of us"></a>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-responsive grayscale" src="assets/images/brand1.png"
-                                    alt="The Last of us"></a>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-responsive grayscale" src="assets/images/brand5.png"
-                                    alt="The Last of us"></a>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-responsive grayscale" src="assets/images/brand3.png"
-                                    alt="The Last of us"></a>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img class="img-responsive grayscale" src="assets/images/brand2.png"
-                                    alt="The Last of us"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Brand Section -->
-
-    <!-- Tweet Section-->
-    <div class="tweet" style="display: none">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div id="tweet-slider" class="tweet-carousel pr">
-                        <div class="item">
-                            <p><span class="gold"><i class="fa fa-twitter"></i> @kobeenora</span> Hi, here is the market
-                                place Click Here : <span class="gold">http://themeforest.net</span></p>
-                        </div>
-                        <div class="item">
-                            <p><span class="gold"><i class="fa fa-twitter"></i> @quix</span> Hi, here is the market
-                                place Click Here : <span class="gold">http://themeforest.net</span></p>
-                        </div>
-                        <div class="item">
-                            <p><span class="gold"><i class="fa fa-twitter"></i> @uix</span> Hi, here is the market place
-                                Click Here : <span class="gold">http://themeforest.net</span></p>
-                        </div>
-                        <div class="item">
-                            <p><span class="gold"><i class="fa fa-twitter"></i> @kobeenora</span> Hi, here is the market
-                                place Click Here : <span class="gold">http://themeforest.net</span></p>
-                        </div>
-                        <div class="item">
-                            <p><span class="gold"><i class="fa fa-twitter"></i> @cooker</span> Hi, here is the market
-                                place Click Here :<span class="gold">http://themeforest.net</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="phone-number">
-                        <i class="fa fa-volume-control-phone phone-icon" aria-hidden="true"></i> +000-111-2222
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Tweet Section-->
-
-    <!-- Top Footer Section-->
-    <div class="bottom section-padding" style="display: none">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="bottom-logo-social">
-                        <div class="bottom-logo">
-                            <img src="assets/images/myta-background.png" alt="" style="width: 200px; height: 120px;">
-                        </div>
-                        <!-- <div class="bottom-social">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-github-square"></i></a></li>
-                            </ul>
-                        </div>
-                        <a class="text-link m-t-20" href="#">View More &nbsp;&gt;&gt;</a> -->
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="bottom-heading pr m-t-10">
-                        <h4>Profile</h4>
-                        <span class="single-title-line"></span>
-                    </div>
-                    <div class="bottom-list">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> About Us</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Blogs</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Mobile Apps</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="bottom-heading pr">
-                        <h4>Contact Us </h4>
-                        <span class="single-title-line"></span>
-                    </div>
-                    <div class="instagram-gallery">
-                        <li class="gallery-img display-inline"><a href="https://www.facebook.com/ai.mytravelassistant/"
-                                target="_blank"><img class="m-b-10 m-t-10 m-r-10" src="assets/images/socmed/fb.png"></a>
-                        </li>
-                        <div class="gallery-img display-inline"><a href="https://www.instagram.com/myta.ai/"
-                                target="_blank"><img class="m-b-10 m-t-10 m-r-10" src="assets/images/socmed/ig.png"></a>
-                        </div>
-                        <div class="gallery-img display-inline"><a href="https://twitter.com/myta_ai/"><img
-                                    class="m-b-10 m-t-10" style="border-radius: 7px; width: 40px; height: 40px"
-                                    src="assets/images/socmed/twitter.png"></a></div>
-                        <!-- <div class="gallery-img display-inline"><img class="m-b-10 m-t-10" style="width: 40px; height: 44px; margin-left: 8px" src="assets/images/socmed/email.png" alt=""></div> -->
-                    </div>
-                    <div>
-                        <h4 class="m-t-30">Email : mailto:info@myta.ai</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="bottom-heading pr">
-                        <h4>Transaction</h4>
-                        <span class="single-title-line"></span>
-                    </div>
-                    <!-- <div class="bottom-newsletter">
-                        <p>Please write your email and get our amazing updates, news and support. Proin gravida nibh vel velit auctor aliquet.</p>
-                        <form action="#">
-                            <div class="form-group no-margin pr" style="display: none">
-                                <input type="text" placeholder="Check In" class="form-control custom-input">
-                                <i class="fa fa-envelope form-icon"></i>
-                            </div>
-                        </form>
-                    </div> -->
-                    <div class="instagram-gallery">
-                        <div class="gallery-img display-inline"><img class="m-b-10 m-t-10"
-                                style="border-radius: 7px; width: 100px; height: 60px"
-                                src="assets/images/payment/visa.png"></div>
-                        <div class="gallery-img display-inline"><img class="m-b-10 m-t-10"
-                                style="border-radius: 7px; width: 100px; height: 80px"
-                                src="assets/images/payment/mastercard.png"></div>
-                        <!-- <div class="gallery-img display-inline"><img class="m-b-10 m-t-10" style="width: 40px; height: 44px; margin-left: 8px" src="assets/images/socmed/email.png" alt=""></div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Top Footer Section-->
-
-    <!-- Bottom Footer Section-->
-    <div class="footer" style="display: none">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="copyright">
-                        <p>© Copyright 2019 by PT Talkabot Teknologi Indonesia - All right reserved</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="text-right">
-                        <div class="payment-icon" style="display: none">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-cc"></i></a></li>
-                                <li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
-                                <li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
-                                <li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
-                                <li><a href="#"><i class="fa fa-cc-stripe"></i></a></li>
-                                <li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="click-scroll">
-                    <a data-scroll-goto="0"><i class="fa fa-angle-double-up scroll-icon"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Bottom Footer Section-->
+    <!-- End Myta Footer Section -->
 
     <!-- Contribute JS Files -->
     <script src="assets/js/cheno.lib.js"></script>
@@ -711,8 +163,8 @@
         var talkabotlivechat = {
             url: 'https://your.talklogics.co/user/5bb2e854417ac10004b2c774?c=black-mate',
         };
-    </script> 
-    <script src="https://your.talklogics.co/public/livetalk/engine.js" ></script> -->
+    </script> -->
+    <script src="https://your.talklogics.co/public/livetalk/engine.js"></script>
 </body>
 
 </html>
