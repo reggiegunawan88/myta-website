@@ -26,7 +26,6 @@ body {
   font-family: 'Poppins', 'sans-serif';
   font-size: 40px;
   font-weight: bold;
-  font-style: normal;
   font-stretch: normal;
   line-height: 0.56;
   letter-spacing: 0.5px;
@@ -125,6 +124,11 @@ body {
   margin-top: 20px;
 }
 
+.hotel-list{
+  width: 260px;
+  height: 162px;
+}
+
 .myta-cloud p{
   font-family: 'Poppins', 'sans-serif';
   color: #ffff;
@@ -173,8 +177,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  /* border-top-left-radius: 30px;
-  border-top-right-radius: 30px; */
 }
 
 .myta-footer{
@@ -200,42 +202,6 @@ body {
   cursor: pointer;
 }
 
-
-.wrapper-myta{
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 40px;
-  box-shadow: 3px 5px 7px 0 rgba(0, 0, 0, 0.16);
-  background-image: linear-gradient(66deg, #3483ca, #1a4265);
-}
-
-#myta-img{
-  width: 550px;
-  height: 500px;
-  position: absolute;
-  top: -73px;
-  left: -99px;
-}
-
-#why-choose-myta{
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  font-family: 'Lato', sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 0.6px;
-  text-align: center;
-  color: #3483ca;
-}
-
-.gallery img{
-  width: 100px;
-  height: 100px;
-}
-
 .location h2{
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   font-size: 60px;
@@ -248,82 +214,12 @@ body {
   color: #3483ca;
 }
 
-#ask-myta-text{
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  font-family: 'Lato', sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 0.6px;
-  text-align: left;
-  color: #c5e9ea;
-}
-
 .socmed-btn{
   display: inline-block;
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 65px;
-}
-
-#myta-phone{
-  width: 400px;
-  height: 440px;
-  position: absolute;
-  top: -50px;
-  right: 13%;
-}
-
-#introducing-myta-text{
-  font-family: 'Lato', 'sans-serif';
-  font-size: 30px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.45;
-  letter-spacing: 0.55px;
-  text-align: left;
-  color: #f8f1e0;
-}
-
-#myta-desc{
-  font-family: 'Lato', sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: 0.24px;
-  text-align: left;
-  color: #c5e9ea;
-}
-
-#btn-bookNow{
-  font-weight: bold;
-  color: #3483ca;
-  font-size: 15px;
-  width: 141px;
-  height: 45px;
-  border-radius: 10px;
-  box-shadow: 2px 1px 3px 0 rgba(248, 241, 224, 0.5);
-  background-color: #f8f1e0;
-}
-
-#myta-signature{
-  padding: 15px;
-  margin: 10px;
-  font-family: Halimun;
-  font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #f8f1e0;
 }
 
 /* --- Scrollbar Design --- */
@@ -403,23 +299,6 @@ ul {
 }
 li {
   list-style: none;
-}
-
-#hello-myta{
-  position: absolute;
-  top: 171px;
-  right: 85px;
-  font-size: 30px;
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-}
-
-#chat-bubble{
-  position: absolute;
-  width: 600px;
-  height: 300px;
-  top: 107px;
-  right: 5px;
 }
 /*------------------------------------------------------------------
     Global
@@ -2169,7 +2048,6 @@ li {
 .bottom-logo-social {
   padding-top: 80px;
   text-align: center;
-  width: 
 }
 .bottom-social {
   padding-top: 30px;

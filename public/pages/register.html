@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Reggie">
+    <meta name="description" content="">
+    <link rel="icon" href="../assets/images/myta-red.png">
+    <title>Myta - My Travel Assistant</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Contribute CSS Files -->
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/icofont.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/menuzord.css">
+
+    <!-- Custom CSS and Font Files -->
+    <link rel="stylesheet" href="../pages/style/register.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="container cont-header">
+            <a href="../index.html">
+                <p id="myta-text">Myta.Ai</p>
+            </a>
+        </div>
+    </div>
+    <!-- End Header Section -->
+
+    <!-- Myta Register Section -->
+    <div class="myta-upper m-t-40">
+        <div class="container">
+            <div class="row center m-t-30">
+                <div class="row">
+                    <button id="form-title" disabled>
+                        <p>Hotel Register</p>
+                    </button>
+                </div>
+                <div class="row">
+                    <form id="form-register">
+
+                        <!--Pre register section-->
+                        <div id="pre-register-section">
+                            <p>Full Name</p>
+                            <input type="text" placeholder="Owner of hotel..." required>
+                            <p>Hotel Name</p>
+                            <input type="text" placeholder="Your hotel name, please don't use alias" required>
+                            <p>Province</p>
+                            <input type="text" placeholder="Your hotel province..." required>
+                            <p>City</p>
+                            <input type="text" placeholder="Your hotel city..." required>
+                            <p>ZIP Code</p>
+                            <input type="text" placeholder="Your hotel ZIP Code..." required>
+                            <p>Room</p>
+                            <input type="text" placeholder="How many rooms you have..." required>
+                            <p>Price</p>
+                            <input type="text"
+                                placeholder="List price from cheapest to highest (ex: Rp 70.000 - Rp 5.000.000)"
+                                required>
+                            <p>Description</p>
+                            <textarea class="desc-area" placeholder="Enter your hotel description"></textarea>
+                            <div class="m-t-40">
+                            </div>
+                            <button type="submit" id="btn-submit">SUBMIT</button>
+                            <p style="text-align: center">By clicking Submit, you have agree with our <a href="#">Terms
+                                    & Condition</a></p>
+                        </div>
+
+                        <!-- Post register section-->
+                        <div id="post-register-section" style="display: none">
+                            <div class="m-t-10">
+                                <img id="myta-pict" src="./../assets/images/Myta/myta.png">
+                            </div>
+                            <div>
+                                <p style="font-size:20px; text-align: center">Thanks to submit your Hotel!</p>
+                                <p style="text-align: center; margin-top: -10px; font-family: 'Lato','sans-serif'">
+                                    Our team will review it later. <br>
+                                    Please wait for our confirmation through email.
+                                </p>
+                                <button type="button" id="btn-submit"><a href="../index.html">HOME</a></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+    </div>
+
+    <!-- Contribute JS Files -->
+    <script>
+        document.getElementById("form-register").onsubmit = function (event) {
+            var pre = document.getElementById("pre-register-section");
+            var post = document.getElementById("post-register-section")
+            pre.style.display = "none";
+            post.style.display = "block";
+            event.preventDefault();
+        };
+    </script>
+</body>
+
+</html>
+
+<!-- https://your.talklogics.co/user/5b6056b87e71490004ede0df?c=black-mate: Talkabot-->
+<!-- https://your.talklogics.co/user/5bb2e854417ac10004b2c774?c=black-mate : Myta -->
