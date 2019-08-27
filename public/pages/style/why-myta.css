@@ -15,80 +15,33 @@ body {
 }
 
 .cont-header{
-  width: 100%;
-  height: 50px;
+    width: 100%;
+    height: 50px;
 }
 
 #myta-text{
-  position: absolute;
-  height: 33px;
-  font-family: 'Poppins', 'sans-serif';
-  font-size: 40px;
-  font-weight: bold;
-  font-stretch: normal;
-  line-height: 0.56;
-  letter-spacing: 0.5px;
-  text-align: left;
-  color: #ff7677;
-  margin-left: 38px;
-  z-index: 9999;
-}
+    position: relative;
+    width: 100%;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    line-height: 0.56;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ff7677;
+    z-index: 9999;
+  }
 
 #myta-text, #btn-top{
   margin-top: 30px;
-}
-
-#btn-top{
-  position: absolute;
-  right: 30px;
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 0.18px;
-  text-align: right;
-  z-index: 9999;
-  background: transparent;
-  border: 2px solid #3199c5;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#btn-top p{
-  color: #127cb4;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-#btn-top:hover{
-  background: #3199c5;
-}
-
-#btn-top p:hover{
-  color: #ffff;
-}
-
-
-.bg-cloud{
-  background-image: url("../images/background-cloud.png");
-  height: 100%;
-  width: 100%;
 }
 
 .center{
   text-align: center;
 }
 
-#iframe-chatbot{
-  position: relative;
-  border: none;
-  height: 443px;
-  width: 388px;
-  bottom: -5px;
-  border-top-left-radius: 35px;
-  border-top-right-radius: 35px;
-}
-
-#iframe-title{
+#banner-title{
   position: relative;
   width: 25%;
   color: #ffff;
@@ -99,42 +52,32 @@ body {
   top: 10px;
 }
 
-#iframe-title p{
+#banner-title p{
   color: #ffff;
   font-weight: bold;
   font-family: 'Poppins','sans-serif';
-  margin-bottom: 10px;
   font-size: 12px;
 }
 
-.myta-deal-section, .hotel-partner-section{
-  margin: 50px;
+#need-chatbot{
+    font-family: 'Poppins','bold';
+    font-weight: bold;
+    color: #3199c5;
+    font-size: 25px;
 }
 
-.myta-deal-text, .myta-deal-text p{
-  margin-bottom: 5px;
-  color: #ffff;
+.icon-explanation h4{
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #262626;
+    margin-top: 5px !important;
+    margin-bottom: 0px !important;
 }
 
-#myta-deal-title{
-  font-family: 'Poppins','sans-serif';
-  font-weight: bold;
-  font-size: 20px;
-}
-
-#myta-deal-desc{
-  font-family: 'Lato','sans-serif';
-  font-weight: lighter;
-  font-size: 16px;
-}
-
-.myta-deal-list{
-  margin-top: 20px;
-}
-
-.hotel-list{
-  width: 260px;
-  height: 162px;
+.icon-explanation p{
+    font-family: 'Lato';
+    font-weight: normal;
+    margin-top: -15px !important;
 }
 
 .myta-cloud p{
@@ -146,37 +89,53 @@ body {
 }
 
 #send-email-btn{
-  font-family: 'Lato', 'sans-serif';
-  margin: 10px;
-  margin-bottom: 50px;
-  border-radius: 15px;
-  background: #ffff;
-  color: #3161a3;
-  width: 200px;
-  height: 50px;
-  font-size: 21px;
+    font-family: 'Lato', 'sans-serif';
+    background: transparent;
+    color: #ffff;
+    margin: 10px;
+    border-radius: 50px;
+    width: 130px;
+    height: 55px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #ffff;
+    cursor: pointer;
 }
 
-.slider {
-  width: 100%;
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
+#send-email-btn:hover{
+    background: #ffff;
+    color: #127cb4;
 }
 
-.slide {
-  width: 300px;
-  flex-shrink: 0;
-  height: 100%;
+#hi-myta-img{
+    width: 150px;
+    height: 130px;
 }
 
-.slides > div {
-  scroll-snap-align: start;
+#btn-register{
+    font-family: 'Poppins', 'sans-serif';
+    margin: 10px;
+    border-radius: 15px;
+    background: #3199c5;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+#btn-register a{
+    color: #ffff;
+}
+
+#btn-register:hover{
+    background: blueviolet;
 }
 
 .myta-upper{
-  background-image: url("../images/background-cloud.png");
+  background-image: url("../../assets/images/background-cloud.png");
 }
 
 .myta-mid{
@@ -208,18 +167,6 @@ body {
   display: inline-block;
   margin-top: 10px;
   cursor: pointer;
-}
-
-.location h2{
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  font-size: 60px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: 0.6px;
-  text-align: center;
-  color: #3483ca;
 }
 
 .socmed-btn{

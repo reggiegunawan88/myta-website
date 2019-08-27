@@ -130,6 +130,7 @@ input::placeholder, .desc-area::placeholder{
   height: 40px;
   width: 130px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 #btn-submit a, #btn-submit a:hover, #btn-submit:hover{
