@@ -70,14 +70,13 @@ body {
     font-family: 'Poppins';
     font-weight: bold;
     color: #262626;
-    margin-top: 5px !important;
-    margin-bottom: 0px !important;
+    margin-top: 20px !important;
 }
 
 .icon-explanation p{
     font-family: 'Lato';
     font-weight: normal;
-    margin-top: -15px !important;
+    margin-top: 10px;
 }
 
 .myta-cloud p{
@@ -219,7 +218,6 @@ h6,
 .h5,
 .h6 {
   font-family: 'Lato', sans-serif;
-  line-height: 80px;
 }
 p {
   font-family: 'Lato', sans-serif;

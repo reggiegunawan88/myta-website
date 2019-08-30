@@ -118,15 +118,22 @@
     <!-- End Myta Footer Section -->
 
     <script>
+        var map;
         function getMap() {
             var mapProp = {
-                center: new google.maps.LatLng(51.508742, -0.120850),
-                zoom: 5,
+                center: new google.maps.LatLng(0, 0),
+                zoom: 4,
             };
-            var map = new google.maps.Map(document.getElementById("map"), mapProp);
+            map = new google.maps.Map(document.getElementById("map"), mapProp);
+        }
+
+        function centerMaps(lat, lng) {
+            var center = new google.maps.LatLng(lat, lng);
+            // using global variable:
+            map.panTo(center);
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=getMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaNTTAC4oSeMOo9btdyV2G3X4JUgh_02Y&callback=getMap"></script>
 </body>
 
 </html>
