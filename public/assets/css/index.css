@@ -20,16 +20,17 @@ body {
 }
 
 #myta-text{
-  position: relative;
-  width: 100%;
+  position: absolute;
+  height: 33px;
   font-family: 'Poppins', 'sans-serif';
   font-size: 40px;
   font-weight: bold;
   font-stretch: normal;
   line-height: 0.56;
   letter-spacing: 0.5px;
-  text-align: center;
+  text-align: left;
   color: #ff7677;
+  margin-left: 38px;
   z-index: 9999;
 }
 
@@ -37,19 +38,56 @@ body {
   margin-top: 30px;
 }
 
+#btn-top{
+  position: absolute;
+  right: 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.18px;
+  text-align: right;
+  z-index: 9999;
+  background: transparent;
+  border: 2px solid #3199c5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn-top p{
+  color: #127cb4;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#btn-top:hover{
+  background: #3199c5;
+}
+
+#btn-top p:hover{
+  color: #ffff;
+}
+
+.bg-cloud{
+  background-image: url("../images/background-cloud.png");
+  height: 100%;
+  width: 100%;
+}
+
 .center{
   text-align: center;
 }
 
-.left{
-  text-align: left;
+#iframe-chatbot{
+  position: relative;
+  border: none;
+  height: 443px;
+  width: 388px;
+  bottom: -5px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
 }
 
-.right{
-  text-align: right;
-}
-
-#form-title{
+#iframe-title{
   position: relative;
   width: 25%;
   color: #ffff;
@@ -60,7 +98,7 @@ body {
   top: 10px;
 }
 
-#form-title p{
+#iframe-title p{
   color: #ffff;
   font-weight: bold;
   font-family: 'Poppins','sans-serif';
@@ -68,87 +106,121 @@ body {
   font-size: 12px;
 }
 
-#form-register{
-  position: relative;
-  border: none;
-  width: 50%;
-  left: 25%;
-  border-top-left-radius: 35px;
-  border-top-right-radius: 35px;
-  background: #fcfafa;
-  text-align: center;
-  padding: 20px;
+.myta-deal-section, .hotel-partner-section{
+  margin: 50px;
 }
 
-#form-register p{
-  font-family: 'Poppins', 'sans-serif';
+.myta-deal-text, .myta-deal-text a, .myta-deal-text p{
+  margin-bottom: 5px;
+  color: #ffff;
+}
+
+.myta-deal-text a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: #ff7677;
+}
+
+#myta-deal-title{
+  font-family: 'Poppins','sans-serif';
   font-weight: bold;
-  color: #707070;
+  font-size: 20px;
+}
+
+#myta-deal-desc{
+  font-family: 'Lato','sans-serif';
+  font-weight: lighter;
   font-size: 16px;
-  line-height: 25px;
-  text-align: left;
-  padding: 16px;
+}
+
+.myta-deal-list{
   margin-top: 20px;
 }
 
-input[type=text]{
-  width: 90%;
-  height: 50px;
-  border-radius: 5px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background-color: #ffffff;
-  border: none;
-  padding: 10px;
+.hotel-list{
+  width: 260px;
+  height: 162px;
 }
 
-input::placeholder, .desc-area::placeholder{
-  font-family: 'Lato', 'sans-serif';
-  font-weight: bold;
-  color: #707070;
-  opacity: 0.3;
-  font-size: 13px;
-}
-
-.desc-area{
-  width: 90%;
-  height: 150px;
-  border-radius: 5px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background-color: #ffffff;
-  border: none;
-  padding: 10px;
-  resize: none;
-}
-
-#btn-submit{
-  background: #3199c5;
-  color: #ffff;
-  border-radius: 20px;
-  border: none;
+.myta-cloud p{
   font-family: 'Poppins', 'sans-serif';
+  color: #ffff;
+  font-size: 26px;
   font-weight: bold;
-  height: 40px;
-  width: 130px;
-  font-size: 16px;
-  cursor: pointer;
+  margin: 10px;
 }
 
-#btn-submit a, #btn-submit a:hover, #btn-submit:hover{
-  background:blueviolet;
-  color: #ffff !important;
+#send-email-btn{
+  font-family: 'Lato', 'sans-serif';
+  margin: 10px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  background: #ffff;
+  color: #3161a3;
+  width: 200px;
+  height: 50px;
+  font-size: 21px;
 }
 
-a:hover{
-  color: red !important;
+.slider {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.slides > div {
+  scroll-snap-align: start;
 }
 
 .myta-upper{
-  background-image: url("../../assets/images/background-cloud.png");
+  background-image: url("../images/background-cloud.png");
 }
 
-#myta-pict{
-  width: 290px;
-  height: 262px;
+.myta-mid{
+  background: #3199c5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.myta-footer{
+  background: linear-gradient(to bottom, #3161a3, #193152);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.myta-footer p{
+  color: #ffff;
+  font-size: 16px;
+}
+
+.footer-text p{
+  margin: 10px;
+}
+
+.footer-social {
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.socmed-btn{
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 65px;
 }
 
 /* --- Scrollbar Design --- */
@@ -161,7 +233,8 @@ a:hover{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent; 
+  background: beige;
+  border-radius: 10px;
 }
  
 /* Handle */
@@ -174,6 +247,7 @@ a:hover{
 ::-webkit-scrollbar-thumb:hover {
   background: grey; 
 }
+
 
 
 /*------------------------------------------------------------------
@@ -205,6 +279,7 @@ button,
 .btn {
   outline: none!important;
   text-decoration: none!important;
+  color: #C2A275;
   transition: all 0.4s ease-in-out 0s;
 }
 a:hover,
@@ -227,8 +302,6 @@ ul {
 li {
   list-style: none;
 }
-
-
 /*------------------------------------------------------------------
     Global
 --------------------------------------------------------------------*/
@@ -250,11 +323,75 @@ li {
 .section-padding {
   padding: 25px 0px;
 }
-.border-1px {
-  border: 1px solid #eaeaea;
+.banner-content {
+  padding-top: 115px;
+  padding-bottom: 80px;
 }
-.border-2px {
-  border: 2px solid #eaeaea;
+.banner-content h1 {
+  color: #fff;
+  font-style: 36px;
+  margin: 0px;
+  font-family: 'Lusitana', serif;
+  font-weight: 700;
+}
+.custom-button {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  bottom: 0;
+  font-size: 18px;
+  padding: 12px 15px;
+  position: absolute;
+  right: 0px;
+}
+.white {
+  color: #fff;
+}
+.gold {
+  color: #89ace9;
+}
+.bg-gray {
+  background: #fafafa;
+}
+.scroll-icon {
+  width: 45px;
+  height: 39px;
+  background: #89ace9;
+  border-radius: 5px;
+  line-height: 40px;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0px;
+  margin: -69px auto;
+  color: #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.scroll-icon:hover {
+  color: black;
+}
+.breadcrumb {
+  background: transparent;
+  margin: 0px;
+  padding-bottom: 95px;
+  padding-top: 130px;
+}
+.breadcrumb ul li {
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.breadcrumb ul li a {
+  color: #fff;
+}
+.breadcrumb ul li a:hover {
+  color: #fff;
+}
+.breadcrumb ul li i {
+  color: #717171;
 }
 .border-1px {
   border: 1px solid #e8e8e8;

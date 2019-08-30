@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Reggie">
+    <meta name="description" content="">
+    <link rel="icon" href="../assets/images/myta-red.png">
+    <title>Myta - My Travel Assistant</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Contribute CSS Files -->
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/icofont.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/menuzord.css">
+
+    <!-- Custom CSS and Font Files -->
+    <link rel="stylesheet" href="../pages/style/hotel.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="container cont-header">
+            <a href="../index.html">
+                <p id="myta-text">myta.ai</p>
+            </a>
+        </div>
+    </div>
+    <!-- End Header Section -->
+
+    <!-- Myta Hotel Section -->
+    <div class="myta-upper m-t-40">
+        <div class="row center">
+            <img id="hotel-img" src="../assets/images/hotel_jakarta/kempinski.jpg">
+        </div>
+        <div class="row center" style="margin-top: -35px;">
+            <button id="banner-title" disabled>
+                <p>hotel name</p>
+            </button>
+        </div>
+        <div class="row" style="background: #ffff;border-top-left-radius: 50px; border-top-right-radius: 50px;">
+            <div class="container center m-t-50">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="hotel-gallery">
+                                <div class="slider">
+                                    <div class="slide" id="slide-1"><img src="../assets/images/discount-img.png"></div>
+                                    <div class="slide" id="slide-1"><img src="../assets/images/discount-img.png"></div>
+                                    <div class="slide" id="slide-1"><img src="../assets/images/discount-img.png"></div>
+                                    <div class="slide" id="slide-1"><img src="../assets/images/discount-img.png"></div>
+                                    <div class="slide" id="slide-1"><img src="../assets/images/discount-img.png"></div>
+                                    <div class="slide" id="slide-1"><img src="../assets/images/discount-img.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row left m-t-40">
+                            <div class="hotel-detail">
+                                <div>
+                                    <img src="../assets/images/smiling.png">
+                                </div>
+                                <div class="m-t-10 m-l-10">
+                                    <p><b>Rating : xxx</b></p>
+                                    <p>Price : Rp.xxx - Rp.xxx</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row center m-t-50 m-b-30">
+                            <button id="btn-book"><a href="../pages/register.html">BOOK NOW</a></button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div id="map"></div>
+                        </div>
+                        <div class="row m-t-20">
+                            <p>Jl. Gatot Subroto, RT.2/RW.1, Gelora, Kecamatan Tanah Abang, Kota Jakarta Pusat, Daerah
+                                Khusus Ibukota Jakarta 10270</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Myta Hotel Section -->
+
+    <!-- Myta Footer Section -->
+    <div class="myta-footer section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6" style="text-align: left">
+                    <div class="footer-text">
+                        <p>myta.ai</p>
+                        <p>+62800000000</p>
+                        <p>mailto@myta.ai</p>
+                    </div>
+                </div>
+                <div class="col-sm-6" style="text-align: right">
+                    <p>Contact Us</p>
+                    <div class="footer-social m-t-10">
+                        <a style="margin: 10px"><img src="../assets/images/socmed/001-whatsapp.png"></a>
+                        <a style="margin: 10px"><img src="../assets/images/socmed/002-line.png"></a>
+                        <a style="margin: 10px"><img src="../assets/images/socmed/003-telegram.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Myta Footer Section -->
+
+    <script>
+        function getMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("map"), mapProp);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=getMap"></script>
+</body>
+
+</html>

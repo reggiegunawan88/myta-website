@@ -8,6 +8,18 @@ body {
   font-family: 'Lato', sans-serif !important;
 }
 
+.center{
+    text-align: center;
+  }
+  
+  .left{
+      text-align: left;
+  }
+  
+  .right{
+      text-align: right;
+  }
+
 .title-text{
   display: inline-flex;
   position: relative;
@@ -15,41 +27,29 @@ body {
 }
 
 .cont-header{
-  width: 100%;
-  height: 50px;
+    width: 100%;
+    height: 50px;
 }
 
 #myta-text{
-  position: relative;
-  width: 100%;
-  font-family: 'Poppins', 'sans-serif';
-  font-size: 40px;
-  font-weight: bold;
-  font-stretch: normal;
-  line-height: 0.56;
-  letter-spacing: 0.5px;
-  text-align: center;
-  color: #ff7677;
-  z-index: 9999;
-}
+    position: relative;
+    width: 100%;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    line-height: 0.56;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ff7677;
+    z-index: 9999;
+  }
 
-#myta-text, #btn-top{
+#myta-text{
   margin-top: 30px;
 }
 
-.center{
-  text-align: center;
-}
-
-.left{
-  text-align: left;
-}
-
-.right{
-  text-align: right;
-}
-
-#form-title{
+#banner-title{
   position: relative;
   width: 25%;
   color: #ffff;
@@ -60,95 +60,114 @@ body {
   top: 10px;
 }
 
-#form-title p{
+#banner-title p{
   color: #ffff;
   font-weight: bold;
   font-family: 'Poppins','sans-serif';
-  margin-bottom: 10px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
-#form-register{
-  position: relative;
-  border: none;
-  width: 50%;
-  left: 25%;
-  border-top-left-radius: 35px;
-  border-top-right-radius: 35px;
-  background: #fcfafa;
-  text-align: center;
-  padding: 20px;
-}
-
-#form-register p{
+.myta-cloud p{
   font-family: 'Poppins', 'sans-serif';
-  font-weight: bold;
-  color: #707070;
-  font-size: 16px;
-  line-height: 25px;
-  text-align: left;
-  padding: 16px;
-  margin-top: 20px;
-}
-
-input[type=text]{
-  width: 90%;
-  height: 50px;
-  border-radius: 5px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background-color: #ffffff;
-  border: none;
-  padding: 10px;
-}
-
-input::placeholder, .desc-area::placeholder{
-  font-family: 'Lato', 'sans-serif';
-  font-weight: bold;
-  color: #707070;
-  opacity: 0.3;
-  font-size: 13px;
-}
-
-.desc-area{
-  width: 90%;
-  height: 150px;
-  border-radius: 5px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background-color: #ffffff;
-  border: none;
-  padding: 10px;
-  resize: none;
-}
-
-#btn-submit{
-  background: #3199c5;
   color: #ffff;
-  border-radius: 20px;
-  border: none;
-  font-family: 'Poppins', 'sans-serif';
+  font-size: 26px;
   font-weight: bold;
-  height: 40px;
-  width: 130px;
-  font-size: 16px;
-  cursor: pointer;
+  margin: 10px;
 }
 
-#btn-submit a, #btn-submit a:hover, #btn-submit:hover{
-  background:blueviolet;
-  color: #ffff !important;
+#hotel-img{
+    width: 825px;
+    height: 535px;
 }
 
-a:hover{
-  color: red !important;
+#btn-book{
+    font-family: 'Poppins', 'sans-serif';
+    margin: 10px;
+    border-radius: 15px;
+    background: #3199c5;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+#btn-book a{
+    color: #ffff;
+}
+
+#btn-book:hover{
+    background: blueviolet;
+}
+
+.slider {
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+.slide img{
+    width: 100px;
+    height: 100px;
+}
+  
+  .slide {
+    width: 105px;
+    flex-shrink: 0;
+    height: 100%;
+  }
+  
+  .slides > div {
+    scroll-snap-align: start;
+  }
+
+.hotel-detail{
+    display: flex;
+    font-family: 'Poppins','sans-serif';
+    font-size: 16px;
+}
+
+#map{
+    height: 266px;
 }
 
 .myta-upper{
   background-image: url("../../assets/images/background-cloud.png");
 }
 
-#myta-pict{
-  width: 290px;
-  height: 262px;
+.myta-footer{
+  background: linear-gradient(to bottom, #3161a3, #193152);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.myta-footer p{
+  color: #ffff;
+  font-size: 16px;
+}
+
+.footer-text p{
+  margin: 10px;
+}
+
+.footer-social {
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.socmed-btn{
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 65px;
 }
 
 /* --- Scrollbar Design --- */
@@ -174,6 +193,7 @@ a:hover{
 ::-webkit-scrollbar-thumb:hover {
   background: grey; 
 }
+
 
 
 /*------------------------------------------------------------------
@@ -205,6 +225,7 @@ button,
 .btn {
   outline: none!important;
   text-decoration: none!important;
+  color: #C2A275;
   transition: all 0.4s ease-in-out 0s;
 }
 a:hover,
@@ -227,8 +248,6 @@ ul {
 li {
   list-style: none;
 }
-
-
 /*------------------------------------------------------------------
     Global
 --------------------------------------------------------------------*/
@@ -255,6 +274,15 @@ li {
 }
 .border-2px {
   border: 2px solid #eaeaea;
+}
+.text-link {
+  display: inline-block;
+  color: #C2A275;
+}
+.text-link:hover,
+.text-link:focus,
+.text-link.active {
+  color: #916f40;
 }
 .border-1px {
   border: 1px solid #e8e8e8;
@@ -309,6 +337,9 @@ li {
 }
 .m-b-60 {
   margin-bottom: 60px;
+}
+.m-l-10{
+    margin-left: 10px;
 }
 .m-l-7 {
   margin-left: 7px;
