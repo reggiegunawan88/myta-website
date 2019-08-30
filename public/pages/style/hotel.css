@@ -127,8 +127,12 @@ body {
 
 .hotel-detail{
     display: flex;
-    font-family: 'Poppins','sans-serif';
+    font-family: "Poppins script=all rev=1";
     font-size: 16px;
+}
+
+.hotel-detail p{
+  color: #3199c5;
 }
 
 #map{

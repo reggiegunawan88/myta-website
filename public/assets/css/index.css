@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
 }
 body {
-  font-family: 'Lato', sans-serif !important;
+  font-family: 'Lato', 'sans-serif' !important;
 }
 
 .title-text{
