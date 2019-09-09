@@ -14,10 +14,12 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <!-- Contribute CSS Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/css/icofont.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/menuzord.css">
+
 
     <!-- Custom CSS and Font Files -->
     <link rel="stylesheet" href="../pages/style/register.css">
@@ -50,24 +52,65 @@
                     <form id="form-register">
                         <!--Pre register section-->
                         <div id="pre-register-section">
-                            <p>Full Name</p>
-                            <input type="text" placeholder="Owner of hotel..." required>
-                            <p>Hotel Name</p>
-                            <input type="text" placeholder="Your hotel name, please don't use alias" required>
-                            <p>Province</p>
-                            <input type="text" placeholder="Your hotel province..." required>
-                            <p>City</p>
-                            <input type="text" placeholder="Your hotel city..." required>
-                            <p>ZIP Code</p>
-                            <input type="text" placeholder="Your hotel ZIP Code..." required>
-                            <p>Room</p>
-                            <input type="text" placeholder="How many rooms you have..." required>
-                            <p>Price</p>
-                            <input type="text"
-                                placeholder="List price from cheapest to highest (ex: Rp 70.000 - Rp 5.000.000)"
-                                required>
-                            <p>Description</p>
-                            <textarea class="desc-area" placeholder="Enter your hotel description"></textarea>
+                            <div class="row">
+                                <p>Full Name</p>
+                                <input type="text" placeholder="Owner of hotel..." required>
+                            </div>
+                            <div class="row">
+                                <p>Hotel Name</p>
+                                <input type="text" placeholder="Your hotel name, please don't use alias" required>
+                            </div>
+                            <div class="row">
+                                <p>Province</p>
+                                <input type="text" placeholder="Your hotel province..." required>
+                            </div>
+                            <div class="row">
+                                <p>City</p>
+                                <input type="text" placeholder="Your hotel city..." required>
+                            </div>
+                            <div class="row">
+                                <p>District</p>
+                                <input type="text" placeholder="Your hotel district..." required>
+                            </div>
+                            <div class="row">
+                                <p>ZIP Code</p>
+                                <input type="text" placeholder="Your hotel ZIP Code..." required>
+                            </div>
+                            <div class="row">
+                                <p>Room(s)</p>
+                                <div class="room-list">
+                                    <div class="col-sm-7">
+                                        <input id="room-name" type="text" placeholder="Room name..." required>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input id="room-price" type="text" placeholder="Room price..." required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-hotel left m-t-20">
+                                <i class="fa fa-plus-circle"></i><a id="add-room"
+                                    style="cursor: pointer; margin-left: 5px">Add more
+                                    room</a>
+                            </div>
+                            <div class="row" style="padding: 10px">
+                                <p>Description</p>
+                                <textarea id="desc-area" placeholder="Enter your hotel description"></textarea>
+                                <p id="char-overview">0/200 characters</p>
+                            </div>
+                            <div class="row left">
+                                <p>Hotel Image</p>
+                                <div class="add-hotel-img" style="margin-left: 20px;font-size: 15px">
+                                    <i class="fa fa-plus-circle"></i><a style="cursor: pointer; margin-left: 5px">Add
+                                        image</a>
+                                </div>
+                            </div>
+                            <div class="row left">
+                                <p>Hotel Location</p>
+                                <div class="add-hotel-location" style="margin-left: 20px; font-size: 15px">
+                                    <i class="fa fa-map-marker"></i><a style="cursor: pointer; margin-left: 5px">Pin
+                                        Location</a>
+                                </div>
+                            </div>
                             <div class="m-t-40">
                             </div>
                             <button type="submit" id="btn-submit">SUBMIT</button>
@@ -98,7 +141,9 @@
     </div>
 
     <!-- Contribute JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
+        var totalChar;
         document.getElementById("form-register").onsubmit = function (event) {
             var pre = document.getElementById("pre-register-section");
             var post = document.getElementById("post-register-section")
@@ -106,6 +151,36 @@
             post.style.display = "block";
             event.preventDefault();
         };
+
+        $(document).ready(function () {
+            var char = 0;
+            $("#desc-area").on('keyup', function () {
+                var key = event.keyCode || event.charCode;
+                //delete key pressed
+                if (key == 8 || key == 46) {
+                    if (char > 0) {
+                        char -= 1;
+                        document.getElementById('char-overview').innerHTML = char + "/200 characters";
+                    }
+                }
+                else {
+                    //if user typing in description textarea
+                    char += 1;
+                    if (char > 200) {
+                        alert("Maximum characters");
+                    }
+                    else {
+                        document.getElementById('char-overview').innerHTML = char + "/200 characters";
+                    }
+                }
+            });
+
+            $("#add-room").on('click', function () {
+                $('<div class="col-sm-7 m-t-10"><input id="room-name" type="text" placeholder="Room name..." required></div><div class="col-sm-4 m-t-10"><input id="room-price" type="text" placeholder="Room price..." required></div>').appendTo($(".room-list"));
+            });
+        });
+
     </script>
 </body>
+
 </html>

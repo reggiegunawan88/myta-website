@@ -111,26 +111,32 @@ body {
     height: 130px;
 }
 
-#btn-register{
-    font-family: 'Poppins', 'sans-serif';
+#btn-google{
+    font-family: 'Lato', 'sans-serif';
     margin: 10px;
     border-radius: 15px;
     background: #3199c5;
-    width: 140px;
+    width: 213px;
     height: 40px;
-    font-size: 16px;
+    font-size: 14px;
     border: none;
-    font-weight: bold;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
 
-#btn-register a{
+#btn-google a{
     color: #ffff;
 }
 
-#btn-register:hover{
+#btn-google:hover{
     background: blueviolet;
+}
+
+#google-icon{
+    position: relative;
+    right: 15px;
+    color: #ffff;
+    font-size: 20px !important;
 }
 
 .myta-upper{
@@ -230,7 +236,6 @@ button,
 .btn {
   outline: none!important;
   text-decoration: none!important;
-  color: #C2A275;
   transition: all 0.4s ease-in-out 0s;
 }
 a:hover,

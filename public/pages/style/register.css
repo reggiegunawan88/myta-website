@@ -101,7 +101,7 @@ input[type=text]{
   padding: 10px;
 }
 
-input::placeholder, .desc-area::placeholder{
+input::placeholder, #desc-area::placeholder{
   font-family: 'Lato', 'sans-serif';
   font-weight: bold;
   color: #707070;
@@ -109,7 +109,7 @@ input::placeholder, .desc-area::placeholder{
   font-size: 13px;
 }
 
-.desc-area{
+#desc-area{
   width: 90%;
   height: 150px;
   border-radius: 5px;
@@ -140,6 +140,26 @@ input::placeholder, .desc-area::placeholder{
 
 a:hover{
   color: red !important;
+}
+
+#room-name{
+  width: 100%;
+  margin-left: 20px;
+}
+
+.add-hotel{
+  color: #3199c5;
+}
+
+#char-overview{
+  text-align: right !important;
+  font-size: 12px !important;
+  font-weight: normal !important;
+  margin-top: 0px !important;
+}
+
+.add-hotel-img, .add-hotel-location{
+  color: #3199c5;
 }
 
 .myta-upper{
